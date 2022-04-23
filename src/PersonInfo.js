@@ -1,9 +1,13 @@
+import { useState } from "react";
+
 const PersonInfo = (props) => {
-  const { name, age,hairColor } = props;
+
+  const { name, age, hairColor } = props;
+  const [userAge, setUserAge] = useState(age);
   return (
     <div className="card">
       <p> Name: {name}</p>
-      <p> Age:{age}</p>
+      <p onClick={(e) => setUserAge(userAge - 1)}> Age: {userAge}</p>
       <p>Hair Color:{hairColor}</p>
     </div>
   );

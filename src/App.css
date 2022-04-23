@@ -22,10 +22,21 @@
   padding: 0.5rem;
   border-radius: 2rem;
   width: 16rem;
-  background-color: #cacaca;
+  background-color: #a15c5c;
   height: 25rem;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin: 0 0.5rem;
+  border-bottom: 0.7rem solid;
+  border-radius: 2rem;
+}
+.card > p:nth-child(2) {
+  cursor: pointer;
+}
+.card:hover {
+  opacity: 0.8;
+  background-color: #8f1a1a;
+  transition: all 0.5s ease-out;
 }
